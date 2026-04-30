@@ -1,12 +1,13 @@
 import java.awt.*;  // referenceTypes() example -> Point
-import java.util.Arrays;  // for arrays()
+import java.util.Arrays;  // for arrays() and multiDimensionalArrays()
 
 public class Main {
     public static void main(String[] args) {
 //        primitiveTypes();
 //        referenceTypes();
 //        strings();
-        arrays();
+//        arrays();
+        multiDimensionalArrays();
     }
 
     static void primitiveTypes(){
@@ -94,5 +95,18 @@ public class Main {
 
         // Length of an array
         System.out.println("numbers array Length: " + numbers.length);
+    }
+
+    static void multiDimensionalArrays(){
+        // Basically Arrays in an Array
+        int[][] emptyGrid = new int[3][3];  // an array containing 3 empty arrays
+        int[][] grid = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};  // An array initialized with arrays of specific values
+
+        // converting a multi-dimensional array to a string
+        System.out.println("Grid: " + Arrays.deepToString(grid));
+
+        // Accessing a specific index
+        emptyGrid[1][1] = 2;
+        System.out.println("Empty Grid: " + Arrays.deepToString(emptyGrid));
     }
 }
