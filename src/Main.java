@@ -28,6 +28,12 @@ public class Main {
         System.out.println(pi);
         System.out.println(letter);
         System.out.println(isEighteen);
+
+        // Constants
+        // This variable can't be changed after it is initialized
+        final int tax = 12;
+        System.out.println(tax);
+        // tax = 11; // Shows an Error if you try to change the value of a constant
     }
 
     static void referenceTypes(){
