@@ -17,6 +17,7 @@ public class Main {
 //        ternaryOperators();
 //        switchCases();
 //        forLoops();
+        whileLoops();
     }
 
     static void primitiveTypes(){
@@ -287,6 +288,16 @@ public class Main {
         // runs the code within the {} a certain number of times (based on a condition)
         for (int i=0; i<5; i++) {
             System.out.println("Hello (x" + i + ")");
+        }
+    }
+
+    static void whileLoops(){
+        // While loops continue to run the code in the {} until a condition is met
+        // This can run for as long as needed
+        int num = 0;
+        while (num < 5){
+            System.out.println(num);
+            num++;
         }
     }
 }
