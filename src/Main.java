@@ -15,7 +15,8 @@ public class Main {
 //        readUserInput();
 //        ifStatements();
 //        ternaryOperators();
-        switchCases();
+//        switchCases();
+//        forLoops();
     }
 
     static void primitiveTypes(){
@@ -279,6 +280,13 @@ public class Main {
             default:
                 System.out.println("Hello Guest");
                 break;
+        }
+    }
+
+    static void forLoops(){
+        // runs the code within the {} a certain number of times (based on a condition)
+        for (int i=0; i<5; i++) {
+            System.out.println("Hello (x" + i + ")");
         }
     }
 }
